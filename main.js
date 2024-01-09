@@ -7,7 +7,7 @@ let boat = document.getElementById("boat");
 let dreams = document.querySelector(".dreams");
 let main = document.querySelector(".main");
 let menu = document.querySelector('.menu')
-let body = document.querySelector('body')
+let content = document.querySelector('.content')
 window.onscroll = function () {
     let value = scrollY;
     stars.style.left = value + "px";
@@ -37,4 +37,10 @@ window.onscroll = function () {
 };
 menu.onclick=function(){
     document.querySelector('ul').classList.toggle('open')
+}
+main.onclick=function(){
+    document.querySelector('ul').classList.remove('open')
+}
+content.onclick=function(){
+    document.querySelector('ul').classList.remove('open')
 }
