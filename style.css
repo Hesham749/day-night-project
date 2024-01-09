@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 body {
     background: linear-gradient(rgb(66, 12, 95), rgb(26, 2, 40));
     height: 100%;
@@ -9,7 +12,6 @@ body {
         Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
         sans-serif;
     width: 100%;
-    overflow-x: hidden;
 }
 header {
     display: flex;
@@ -35,6 +37,7 @@ a {
     text-transform: uppercase;
     letter-spacing: 5px;
 }
+
 nav ul {
     list-style: none;
     display: flex;
@@ -86,7 +89,7 @@ nav ul li a:hover,
 .dreams {
     color: #fff;
     font-size: 25px;
-    transform: translateY(-185px);
+    transform: translateY(-195px);
     text-transform: uppercase;
 }
 .content {
@@ -104,8 +107,10 @@ nav ul li a:hover,
     display: none;
 }
 @media (max-width: 685px) {
+
+
     header{
-        padding: 20px;
+        padding: 10px;
         position: relative;
     }
     header .menu {
@@ -116,10 +121,11 @@ nav ul li a:hover,
         flex-direction: column;
         background-color: rgba(255, 255, 255, 0.1);
         top: 70px;
-        right: -800px;
+        right: -5px;
         padding: 20px;
         width: 100%;
-        transition: .5s ease-in-out;
+        display: none;
+        transition: .9s ;
 
     }
     nav ul li {
@@ -137,7 +143,7 @@ nav ul li a:hover,
     } 
     nav ul.open{
         display: flex;
-        right: -1px;
+        right: -5px;
     }
 
 }
