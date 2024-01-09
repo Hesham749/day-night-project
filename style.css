@@ -89,9 +89,10 @@ nav ul li a:hover,
 .dreams {
     color: #fff;
     font-size: 25px;
-    transform: translateY(-200px);
+    transform: translateY(-175px);
     text-transform: uppercase;
-    /* display: none; */
+    position: fixed;
+    display: none;
 }
 .content {
     color: #fff;

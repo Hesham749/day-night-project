@@ -18,9 +18,13 @@ window.onscroll = function () {
     boat.style.top = value + "px";
     boat.style.left = value * 3 + "px";
     dreams.style.fontSize = value + "px";
+    if(value >= 1){
+        dreams.style.display = "block";
+    }
     if (value >= 80) {
         dreams.style.fontSize = 80 + "px";
-        dreams.style.position = "fixed";
+        
+
         if (value >= 558) {
             dreams.style.display = "none";
         } else {
