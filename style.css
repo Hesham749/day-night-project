@@ -12,6 +12,7 @@ body {
         Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
         sans-serif;
     width: 100%;
+    overflow-x: hidden;
 }
 header {
     display: flex;
@@ -112,40 +113,51 @@ nav ul li a:hover,
 
 
     header{
+        box-sizing: border-box;
         padding: 10px;
         position: relative;
+        width: 100%;
     }
     header .menu {
         display: block;
+        z-index: 3;
     }
     nav ul {
+        box-sizing: border-box;
         position: absolute;
         flex-direction: column;
         background-color: rgba(255, 255, 255, 0.1);
-        top: 70px;
-        right: -5px;
-        padding: 20px;
+        top: 60px;
+        right: 0px;
         width: 100%;
+        padding: 20px;
         display: none;
-        transition: .9s ;
+        transition: .3s ;
 
     }
+    nav ul::before{
+        content: '';
+        position: absolute;
+        border-width: 20px;
+        border-style: solid;
+        border-color: transparent transparent rgba(255, 255, 255, 0.1) transparent;
+        top: -40px;
+        right: 8px;
+    }
     nav ul li {
-        width: 90%;
+        display: block;
         text-align: center;
-        
     }
 
     nav ul li a{
-        padding: 10px 100px;
-        display: inline-block;
-        width: 150px;
+        padding: 10px 0px;
+        display: block;
+        width: 250px;
             background-color: #2a063e;
-
+            margin: 0 auto;
     } 
     nav ul.open{
         display: flex;
-        right: -5px;
     }
 
 }
