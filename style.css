@@ -149,12 +149,16 @@ nav ul li a:hover,
     }
 
     nav ul li a{
+        box-sizing: border-box;
         padding: 10px 0px;
         display: block;
         width: 250px;
             background-color: #2a063e;
             margin: 0 auto;
     } 
+    nav ul li a:hover{
+        padding-left:35px ;
+    }
     nav ul.open{
         display: flex;
     }
