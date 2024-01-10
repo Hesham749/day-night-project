@@ -114,7 +114,7 @@ nav ul li a:hover,
     header{
         box-sizing: border-box;
         padding: 10px;
-        position: relative;
+        position: fixed;
         width: 100%;
     }
     header .menu {
